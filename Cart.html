@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GlowMuse Studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">View Our Latest Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Our Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="Cart Section container my-5">
+        <h2>Your Shopping Cart</h2>
+        <p>Browse our collections and add your favorite items to the cart!</p>
+        <div id="cart-items"></div>
+        <h3>Total: <span id="cart-total">P0</span></h3>
+        <button class="btn btn-primary" id="Checkout-button">Proceed to Checkout</button>
+        <button onclick="ClearCart()" class="btn btn-secondary">Clear Cart</button>
+    </section>
+        <!--Bootstrap JS and dependencies-->
+        <script src="https://cdn.jsdelivr.net/npm/popperjs@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>     
+        <script src="script.js"></script>
+
+                    
+
+</body>
+</html>
