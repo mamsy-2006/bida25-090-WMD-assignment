@@ -24,10 +24,13 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">View Our Latest Collections</a>
+                            <a class="nav-link" href="About.html">View Our Latest Collections</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Contact.html">Our Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
                         </li>
                     </ul>
                 </div>
@@ -39,26 +42,96 @@
         <h2>Our Latest Collections</h2>
         <p>GlowMuse Studio is a company that produces high-quality fashion and accessories.</p>
         <p>Our mission is to empower individuals through stylish and sustainable fashion choices.</p>
-        <div class="Collection Grid">
-            <div class="Collection Item">
+        <h3>Dresses</h3>
+        <div class="Collection-Grid">
+            <div class="Collection-Item">
                 <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Women Solid Color Simple Strapless Pleated Dress.jpg" alt="Strapless Pleated Dress" class="img-fluid">
                 <h5>Elegant Evening Gown</h5>
                 <p>A stunning evening gown perfect for special occasions.</p>
                 <p><span class="price">Price: P250</span></p>
+                <button class="btn btn-primary" onclick="addToCart('Elegant Evening Gown', '250')">Add to Cart</button>
             </div>
-            <div class="Collection Item">
-                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\pink tops.jpg" alt="Stlish Pink Tops" class="img-fluid">
-                <h5>Chic Casual Wear</h5>
-                <p>Stylish and comfortable casual wear for everyday elegance.</p>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\download (2).jpg" class="img-fluid">
+                <h5>Maxi Dress</h5>
+                <p>Flowy and comfortable, offering effortless elegance for any occasion.</p>
                 <p><span class="price">Price: P150</span></p>
+                <button onclick="addToCart('Maxi Dress', '150')" class="btn btn-primary">Add to Cart</button>
             </div>
-            <div class="Collection Item">
+            <div class="Collection-Item">
                 <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\New Arrivals 🛬.jpg" alt="Luxury Tote Bags" class="img-fluid">
                 <h5>Luxury Tote Bags</h5>
                 <p>Unique accessories to complement your fashion statement.</p>
                 <p><span class="price">Price: P180</span></p>
+                <button onclick="addToCart('Luxury Tote Bags', '180')" class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Mini Saia_short assimétrico stonewashed em Denim….jpg" alt="Mini Skirt" class="img-fluid">
+                <h5>Mini Skirt</h5>
+                <p>Perfect for girls outings.</p>
+                <p><span class="price">Price: P220</span></p>
+                <button onclick="addToCart('Mini Skirt', '220')" class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\最新スタイル ホルターネック らせん状メタリックデコレーション ウエストフレアミニドレス….jpg" alt="Strapless Pleated Dress" class="img-fluid">
+                <h5>Elegant Evening Dress</h5>
+                <p>A stunning evening dress perfect for special occasions.</p>
+                <p><span class="price">Price: P150</span></p>
+                <button onclick="addToCart('Elegant Evening Dress', '150')" class="btn btn-primary">Add to Cart</button>
         </div>
-        
+        <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\✨Pre-order only, XS(6) - XL(16)✨ ✨Price _ 75k….jpg" alt="Maxi Skirt" class="img-fluid">
+                <h5>Maxi Skirt</h5>
+                <p>A beautiful maxi skirt for a timeless look.</p>
+                <p><span class="price">Price: P190</span></p>
+                <button onclick="addToCart('Maxi Skirt', '190')" class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\3pcs_Set Tween Girl Fitted Casual Solid Color….jpg" alt="Fitted top" class="img-fluid">
+                <h5>Fitted Top</h5>
+                <p>A stylish and comfortable top for everyday wear.</p>
+                <p><span class="price">Price: P120</span></p>
+                <button onclick="addToCart('Fitted Top', '120')" class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Branco Casual Collar  Tecido Simples Em….jpg" alt="Mini Skirt" class="img-fluid">
+                <h5>Mini Skirt</h5>
+                <p>Perfect for girls outings.</p>
+                <p><span class="price">Price: P160</span></p>
+                <button onclick="addToCart('Mini Skirt', '160')" class="btn btn-primary">Add to Cart</button>
+            </div>
+        <h4>Tops</h4>`
+        <div class="Collection-Grid"></div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Women Solid Color Simple Strapless Pleated Dress.jpg" alt="Strapless Pleated Dress" class="img-fluid">
+                <h1>Elegant Evening Gown</h1>
+                <p>A stunning evening gown perfect for special occasions.</p>
+                <p><span class="price">Price: P250</span></p>
+                <button class="btn btn-primary" onclick="addToCart('Elegant Evening Gown', '250')">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Women Solid Color Simple Strapless Pleated Dress.jpg" alt="Strapless Pleated Dress" class="img-fluid">
+                <h1>Elegant Evening Gown</h1>
+                <p>A stunning evening gown perfect for special occasions.</p>
+                <p><span class="price">Price: P250</span></p>
+                <button class="btn btn-primary" onclick="addToCart('Elegant Evening Gown', '250')">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Women Solid Color Simple Strapless Pleated Dress.jpg" alt="Strapless Pleated Dress" class="img-fluid">
+                <h1>Elegant Evening Gown</h1>
+                <p>A stunning evening gown perfect for special occasions.</p>
+                <p><span class="price">Price: P250</span></p>
+                <button class="btn btn-primary" onclick="addToCart('Elegant Evening Gown', '250')">Add to Cart</button>
+            </div>
+            <div class="Collection-Item">
+                <img src="C:\Users\Mamsyyyyy\OneDrive - Botswana Accountancy College\my github page\Women Solid Color Simple Strapless Pleated Dress.jpg" alt="Strapless Pleated Dress" class="img-fluid">
+                <h1>Elegant Evening Gown</h1>
+                <p>A stunning evening gown perfect for special occasions.</p>
+                <p><span class="price">Price: P250</span></p>
+                <button class="btn btn-primary" onclick="addToCart('Elegant Evening Gown', '250')">Add to Cart</button>
+            </div>
+        <h5>Shoes</h5>
+        <h6>Accessories</h6>
     </main>
     <footer>
         <p>&copy;2026 GlowMuse Studio</p>
@@ -66,5 +139,6 @@
     <!--Bootstrap JS and dependencies-->
     <script src="https://cdn.jsdelivr.net/npm/popperjs@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
